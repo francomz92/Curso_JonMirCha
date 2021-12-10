@@ -1,0 +1,17 @@
+.connection-status-online,
+.connection-status-offline {
+   display: block;
+   padding: 0.5rem;
+   font-weight: bold;
+   text-align: center;
+   background-color: rgb(74, 202, 74);
+   color: #000;
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: 999;
+}
+
+.connection-status-offline {
+   background-color: rgb(219, 86, 86);
+}

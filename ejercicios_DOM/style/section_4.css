@@ -1,0 +1,14 @@
+#content-responsive iframe {
+   width: 560px;
+   height: 315px;
+   display: block;
+   margin: auto;
+   padding: 1rem 0;
+}
+#content-responsive a {
+   color: #111;
+   font-size: 1rem;
+}
+#content-responsive a:hover {
+   color: gold;
+}

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/burger.svg" type="image/x-icon">
+    <title>Ejercicios DOM</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./style/section_1.css">
+    <link rel="stylesheet" href="./style/section_2.css">
+    <link rel="stylesheet" href="./style/section_3.css">
+    <link rel="stylesheet" href="./style/section_4.css">
+    <link rel="stylesheet" href="./style/section_5.css">
+    <link rel="stylesheet" href="./style/section_6.css">
+    <link rel="stylesheet" href="./style/section_7.css">
+    <link rel="stylesheet" href="./style/section_8.css">
+    <link rel="stylesheet" href="./style/section_9.css">
+    <link rel="stylesheet" href="./style/section_10.css">
+    <link rel="stylesheet" href="./style/section_11.css">
+    <link rel="stylesheet" href="./style/section_12.css">
+    <link rel="stylesheet" href="./style/section_13.css">
+    <link rel="stylesheet" href="./style/section_14.css">
+    <link rel="stylesheet" href="./style/section_15.css">
+
+  </head>
+
+  <body class="body" data-dark="">
+    <!-- Burger Menú -->
+    <button class="burger bottom-button" type="menu"></button>
+    <aside class="menu-container">
+      <nav class="">
+        <ul class="menu">
+          <li class="item">
+            <a class="item-sub-title" href="#section-1" data-section="1">Reloj Digital y Sounds Track</a>
+          </li>
+          <li class="item">
+            <a class="item-sub-title" href="#section-2" data-section="2">Eventos del Teclado</a>
+          </li>
+          <li class="item">
+            <a class="item-sub-title" href="#section-3" data-section="3">Countdown</a>
+          </li>
+          <li class="item">
+            <a class="item-sub-title" href="#section-4" data-section="4">Responsive con JavaScript</a>
+          </li>
+          <li class="item">
+            <a class="item-sub-title" href="#section-5" data-section="5">Responsive Test</a>
+          </li>
+          <li class="item">
+            <a class="item-sub-title" href="#section-6" data-section="6">Detección de Dispositivos</a>
+          </li>
+          <li class="item">
+            <a class="item-sub-title" href="#section-7" data-section="7">Detección de Conexión</a>
+          </li>
+          <li class="item">
+            <a class="item-sub-title" href="#section-8" data-section="8">Detección de Cámara Web</a>
+          </li>
+          <li class="item">
+            <a class="item-sub-title" href="#section-9" data-section="9">Detección de Loaclización</a>
+          </li>
+          <li class="item">
+            <a class="item-sub-title" href="#section-10" data-section="10">Filtro de Busqueda</a>
+          </li>
+          <li class="item">
+            <a class="item-sub-title" href="#section-11" data-section="11">Elección Aleatoria</a>
+          </li>
+          <li class="item">
+            <a class="item-sub-title" href="#section-12" data-section="12">Responsive Slider</a>
+          </li>
+          <li class="item">
+            <a class="item-sub-title" href="#section-13" data-section="13">Autoplay video</a>
+          </li>
+          <li class="item">
+            <a class="item-sub-title" href="#section-14" data-section="14">Validación de formulario</a>
+          </li>
+          <li class="item">
+            <a class="item-sub-title" href="#section-15" data-section="15">Narrador</a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+
+    <header class="header">
+      <h1 class="title">Ejercicios del DOM</h1>
+    </header>
+
+    <section id="section-1">
+      <h2 class="sub-title"></h2>
+      <div>
+        <span class="clock"></span>
+      </div>
+      <h3 class="track-title"></h3>
+      <audio id="alarm-track" data-playing="stoped" src="./assets/audio/Carda_Keeks_Need_You_Now.mp3"></audio>
+      <div class="section-1__buttons">
+        <button class="start-clock" type="button" data-darkmode-button="">Ver Reloj</button>
+        <button class="stop-clock" type="button" disabled="true" data-darkmode-button="">Ocultar Reloj</button>
+        <button class="start-alarm" type="button" data-darkmode-button="">Iniciar Música</button>
+        <button class="stop-alarm" type="button" disabled="true" data-darkmode-button="">Detener Música</button>
+      </div>
+    </section>
+
+    <section id="section-2">
+      <h2 class="sub-title"></h2>
+      <div class="space-box">
+        <span class="ball"></span>
+      </div>
+    </section>
+
+    <section id="section-3">
+      <h2 class="sub-title"></h2>
+      <span class="count-down"></span>
+      <form id="date-form">
+        <input type="date" id="destine-date">
+        <button type="button" id="reset-date" data-darkmode-button="">Calcular</button>
+      </form>
+    </section>
+
+    <section id="section-4">
+      <h2 class="sub-title"></h2>
+      <div id="content-responsive"></div>
+    </section>
+
+    <section id="section-5">
+      <h2 class="sub-title"></h2>
+      <div class="responsive-prove-form-container">
+        <form class="responsive-prove-form">
+          <input type="text" placeholder="URL" name="url">
+          <input type="text" placeholder="Widh" name="width" required="required">
+          <input type="text" placeholder="Height" name="height" required="required">
+          <div class="responsive-prove-form__button-container">
+            <button type="submit" data-darkmode-button="">Probar</button>
+            <button type="reset" data-darkmode-button="">Cerrar</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section id="section-6">
+      <h2 class="sub-title"></h2>
+      <h3 class="device"></h3>
+    </section>
+
+    <section id="section-7">
+      <h2 class="sub-title"></h2>
+    </section>
+
+    <section id="section-8">
+      <h2 class="sub-title"></h2>
+      <button type="button" class="web-cam-button" data-darkmode-button="" ="">Iniciar Camara</button>
+      <video id="web-cam" controls="controls"></video>
+    </section>
+
+    <section id="section-9">
+      <h2 class="sub-title"></h2>
+      <button type="button" class="location-button" data-darkmode-button="">Detectar localización</button>
+      <div class="location-container"></div>
+    </section>
+
+    <section id="section-10">
+      <h2 class="sub-title"></h2>
+      <input type="text" class="search-article" placeholder="Buscar">
+      <div class="articles-container"></div>
+    </section>
+    <template id="articles"></template>
+
+    <section id="section-11">
+      <h2 class="sub-title"></h2>
+      <ul class="options-list"></ul>
+      <button type="button" id="random-choice-button" data-darkmode-button="">Go</button>
+    </section>
+    <template id="options-list-items"></template>
+
+    <section id="section-12">
+      <h2 class="sub-title"></h2>
+      <div class="img-container" data-dark="">
+        <button type="button" id="prev"></button>
+        <div class="figures-container">
+          <figure>
+            <img src="./assets/articles/animals.jpg" alt="Animals">
+            <figcaption>Animals</figcaption>
+          </figure>
+          <figure>
+            <img src="./assets/articles/culture.jpg" alt="Culture">
+            <figcaption>Culture</figcaption>
+          </figure>
+          <figure>
+            <img src="./assets/articles/gourmet.jpg" alt="Gourmet">
+            <figcaption>Gourmet</figcaption>
+          </figure>
+        </div>
+        <button type="button" id="next"></button>
+      </div>
+    </section>
+
+    <section id="section-13">
+      <h2 class="sub-title"></h2>
+      <div class="video-container">
+        <div class="video">
+          <iframe id="player1" src="https://www.youtube.com/embed/F_6oi06lgwo?enablejsapi=1&controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; autoplay" allowfullscreen="allowfullscreen" data-playing=""></iframe>
+        </div>
+        <div class="video">
+          <iframe id="player2" src="https://www.youtube.com/embed/935AJ4JRDlI?enablejsapi=1&controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; autoplay" allowfullscreen="allowfullscreen" data-playing=""></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section id="section-14">
+      <h2 class="sub-title"></h2>
+      <form class="validate-form">
+        <input type="text" name="first_name" placeholder="Nombre..." required="required" maxlength="35">
+        <input type="text" name="last_name" placeholder="Apellido..." required="required" maxlength="35">
+        <input type="email" name="email" placeholder="Email..." required="required" maxlength="50">
+        <button class="btn" type="submit" data-darkmode-button="">Enviar</button>
+      </form>
+    </section>
+
+    <section id="section-15">
+      <h2 class="sub-title"></h2>
+      <form class="narrator-container">
+        <select name="narrator"></select>
+        <textarea name="text_for_read" cols="30" rows="10" placeholder="Escribe un texto..."></textarea>
+        <button class="btn" type="submit">Hablar</button>
+      </form>
+    </section>
+
+    <!-- To Up -->
+    <button class="to-up bottom-button" type="button"></button>
+    <!-- Dark Mode -->
+    <input class="dark-mode bottom-button" type="checkbox">
+
+    <!-- Scripts -->
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="./script.js" type="module"></script>
+  </body>
+
+</html>

@@ -1,0 +1,36 @@
+.count-down {
+   display: block;
+   margin: 5rem auto;
+   text-align: center;
+   font-size: 1.5rem;
+   font-weight: bold;
+}
+#date-form {
+   width: 15rem;
+   margin: 2rem auto;
+}
+#date-form * {
+   margin-top: 0.5rem;
+   padding: 0.5rem;
+   font-size: 1rem;
+}
+#reset-date {
+   background-color: gold;
+   border: 1px solid #777;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: background-color 0.2s, color 0.2s ease;
+}
+#reset-date:hover {
+   background-color: #111;
+   color: gold;
+}
+input {
+   border: 1px solid #aaa;
+   border-radius: 0.5rem;
+   background-color: #eee;
+}
+button,
+input {
+   outline: none;
+}

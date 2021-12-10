@@ -1,0 +1,49 @@
+.responsive-prove-form-container {
+   padding: 3rem 0;
+}
+
+.responsive-prove-form {
+   width: 10rem;
+   margin: auto;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   justify-content: center;
+}
+.responsive-prove-form * {
+   margin-top: 0.5rem;
+}
+.responsive-prove-form > input {
+   padding: 0.5rem;
+   text-align: center;
+}
+
+.responsive-prove-form__button-container {
+   display: flex;
+   flex-direction: row;
+   gap: 0.5rem;
+}
+.responsive-prove-form__button-container > button {
+   padding: 0.3rem;
+   background-color: gold;
+   color: #111;
+   border: 1px solid #777;
+   border-radius: 5px;
+   transition: background-color 0.2s, color 0.2s;
+}
+.responsive-prove-form__button-container > button:hover {
+   background-color: #111;
+   border-color: #000;
+   color: gold;
+   cursor: pointer;
+}
+.dark-button {
+   /* set dark mode */
+   background-color: #111 !important;
+   color: gold !important;
+   border-color: #000 !important;
+}
+.dark-button:hover {
+   background-color: gold !important;
+   color: #111 !important;
+}

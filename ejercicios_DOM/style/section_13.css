@@ -1,0 +1,17 @@
+.video-container,
+.video-container .video {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.video-container {
+   width: 100%;
+   flex-direction: column;
+}
+
+.video > iframe {
+   width: 560px;
+   height: 315px;
+   margin: 5rem 0;
+}

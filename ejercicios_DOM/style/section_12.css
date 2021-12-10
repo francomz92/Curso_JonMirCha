@@ -1,0 +1,70 @@
+.img-container {
+   margin: auto;
+   padding: 1rem;
+   width: 40rem;
+   height: 30rem;
+   display: flex;
+   align-items: center;
+   gap: 1rem;
+   position: relative;
+}
+
+.img-container > button {
+   width: 5rem;
+   height: 4rem;
+   border: none;
+   border-radius: 50%;
+   background-color: transparent;
+   background-repeat: no-repeat;
+}
+.img-container > button:first-child {
+   background-image: url('../assets/next.svg');
+   transform: rotateY(180deg);
+}
+.img-container > button:last-child {
+   background-image: url('../assets/next.svg');
+}
+
+.figures-container {
+   width: calc(100% - 12rem);
+   height: 100%;
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   overflow: hidden;
+}
+
+.figures-container > figure {
+   transition: all 0.2s ease;
+}
+
+.figures-container > figure > img {
+   width: 26rem;
+}
+.figures-container > figure > figcaption {
+   text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+   .figures-container {
+      margin: auto;
+      width: calc(100% - 10rem);
+      overflow: hidden;
+   }
+
+   .figures-container img {
+      margin: 0;
+      object-position: -6rem;
+   }
+
+   .img-container > button {
+      width: 2rem;
+      height: 2rem;
+   }
+   .img-container {
+      width: 100%;
+      height: 100%;
+      padding: 0;
+   }
+}

@@ -1,0 +1,14 @@
+.space-box {
+   width: 90%;
+   height: 60vh;
+   display: flex;
+   margin: 0 auto;
+   background-color: #000;
+}
+.ball {
+   width: 4rem;
+   margin: auto;
+   min-height: 4rem;
+   border-radius: 50%;
+   background-color: gold;
+}
