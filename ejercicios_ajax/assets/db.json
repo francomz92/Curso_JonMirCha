@@ -1,0 +1,7 @@
+{
+   "articulos": [
+      { "id": 1, "descripcion": "Esta es una imágen de cultura", "imagen": "./assets/culture.jpg" },
+      { "id": 2, "descripcion": "Esta es una imágen de animal", "imagen": "./assets/animals.jpg" },
+      { "id": 3, "descripcion": "Esta es una imágen de gourmet", "imagen": "./assets/gourmet.jpg" }
+   ]
+}

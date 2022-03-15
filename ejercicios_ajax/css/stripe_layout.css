@@ -1,0 +1,56 @@
+.foot-layout {
+   padding: 1rem;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+   justify-content: center;
+   align-items: center;
+   gap: 0.5rem;
+}
+
+.foot-layout > article {
+   min-height: 25rem;
+   position: relative;
+   border-radius: 0.5rem;
+   box-shadow: 0 0 10px 3px #333;
+   box-sizing: border-box;
+   text-align: center;
+   font-size: 0.75rem;
+   background-color: #fff;
+   transition: transform 0.2s ease;
+}
+
+.foot-layout > article > img {
+   width: 100%;
+   height: 12rem;
+   box-sizing: border-box;
+   border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.foot-layout > article > h5 {
+   padding: 1rem 0rem;
+   font-size: 1rem;
+   font-weight: bold;
+}
+
+.foot-layout > article > span {
+   padding: 0.5rem 2rem;
+   display: block;
+}
+.foot-layout > article > span[data-id='price'] {
+   font-size: 1rem;
+   position: absolute;
+   bottom: 0.5rem;
+   left: 0;
+   right: 0;
+}
+
+/* Hover effects */
+
+.foot-layout > article:hover {
+   z-index: 2;
+   cursor: pointer;
+   transform: scale(1.05);
+}
+.foot-layout > article:active {
+   transform: scale(0.95);
+}

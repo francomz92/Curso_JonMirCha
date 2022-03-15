@@ -1,0 +1,56 @@
+.validate-form > input:focus {
+   outline-style: inset;
+   border: none;
+}
+
+.validate-form {
+   max-width: 20rem;
+   margin: auto;
+   margin-top: 5rem;
+}
+
+.validate-form > input,
+.input-error-message {
+   margin: 0.25rem 0;
+   padding: 0.5rem;
+   text-align: center;
+}
+.validate-form > input {
+   border: solid 1px #777;
+   border-radius: 5px;
+}
+
+.input-error-message {
+   display: block;
+   font-size: 0.75rem;
+   color: rgb(255, 122, 122);
+}
+
+.valid {
+   background-color: rgb(157, 224, 157);
+}
+.invalid {
+   background-color: rgb(255, 122, 122);
+}
+
+.validate-form > button {
+   width: 10rem;
+}
+.btn {
+   display: block;
+   margin: auto;
+   margin-top: 1rem;
+   padding: 0.5rem;
+   text-align: center;
+   background-color: var(--light-rose);
+   color: #111;
+   font-size: 1rem;
+   line-height: 1rem;
+   cursor: pointer;
+   border: 1px solid #777;
+   border-radius: 5px;
+   transition: background-color 0.2s ease;
+}
+.btn:hover {
+   background-color: var(--dark-rose);
+}

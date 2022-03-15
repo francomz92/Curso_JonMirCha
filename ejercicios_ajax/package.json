@@ -1,0 +1,26 @@
+{
+   "name": "ajax_js",
+   "version": "1.0.0",
+   "description": "",
+   "main": "serverFront.js",
+   "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "server:back": "node serverBack.js",
+      "server:front": "node serverFront.js",
+      "jsonserver": "json-server -w -p 55555 ./assets/db.json"
+   },
+   "keywords": [],
+   "author": "",
+   "license": "ISC",
+   "dependencies": {
+      "cors": "^2.8.5",
+      "express": "^4.17.2",
+      "html": "^1.0.0",
+      "multer": "^1.4.4",
+      "path": "^0.12.7"
+   },
+   "type": "module",
+   "devDependencies": {
+      "dotenv": "^10.0.0"
+   }
+}

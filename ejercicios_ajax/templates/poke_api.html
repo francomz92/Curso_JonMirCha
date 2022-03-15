@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poke API</title>
+
+    <link rel="stylesheet" href="../css/section_1.css">
+    <link rel="stylesheet" href="../css/poke_api.css">
+    <link rel="stylesheet" href="../css/modal.css">
+  </head>
+
+  <body>
+    <div class="cards-container"></div>
+
+    <div class="pages">
+      <button class="prev">Prev</button>
+      <button class="next">Next</button>
+    </div>
+
+    <template id="poke-api-cards">
+      <figure>
+        <img src="" alt="">
+        <figcaption>
+          <h5></h5>
+          <span class="type"></span>
+          <span class="ability"></span>
+        </figcaption>
+      </figure>
+    </template>
+
+    <script src="../js/PokeAPI.js" type="module"></script>
+  </body>
+
+</html>

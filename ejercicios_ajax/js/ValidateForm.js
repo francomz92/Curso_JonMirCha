@@ -1,11 +1,12 @@
+import { ajax } from './ajax.js';
+import { startLoader, stopLoader } from './Loader.js';
+
 const setValidState = (element) => {
-   console.log('is valid');
    element.classList.add('valid');
    element.classList.remove('invalid');
    clearErrorMessage(element);
 };
 const setInvalidState = (element) => {
-   console.log('is invalid');
    element.classList.remove('valid');
    element.classList.add('invalid');
    clearErrorMessage(element);
@@ -47,7 +48,20 @@ export const validateForm = (event) => {
    event.preventDefault();
    if (document.querySelector('.validate-form span')) alert('Corrige los campos necesarios');
    else {
-      alert('El formulario se procesó de forma correcta');
-      event.target.submit();
+      startLoader('.validate-form');
+      ajax({
+         url: 'http://localhost:3333/form',
+         method: 'POST',
+         data: new FormData(document.querySelector('.validate-form')),
+         succes: async (res) => {
+            const resData = await res.json();
+            stopLoader('.validate-form .start-loader');
+            alert(resData.message);
+         },
+         error: (err) => {
+            alert(err.statusText || 'Mensaje de error');
+         },
+         extra: { mode: 'cors' },
+      });
    }
 };
